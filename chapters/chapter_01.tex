@@ -10,5 +10,50 @@ buscador de linux y buscar la terminal(Gnome) o también se suele llamar konsole
 \includegraphics[width=1\textwidth]{image/chapter_01/terminal.png}
 \end{center}
 
+Deberías abrir tu terminal algo así, como mi terminal esta personalizada seguro tiene colores distintos a la tuya.
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{image/chapter_01/konsole.png}
+\end{center}
+
 
 \section{Los 10 comandos que usaras toda tu vida}
+\begin{enumerate}
+  \item whoami, who am I, El primer comando que aprenderemos es a saber quien soy yo(whoami)
+  
+  
+  \begin{lstlisting}
+whoami
+output : titor
+  \end{lstlisting}
+  ste comando nos indica el usuario que somos, en mi caso mi usuario se llama titor
+  y todos los comandos que ejecute se realizara bajo este usuario.
+  \item pwd, print working directory Comando para saber donde estoy parado.
+  \begin{lstlisting}
+pwd
+output : / home / titor
+  \end{lstlisting}
+  Deberías recibir una vista similar con todos los archivos y directorios que tengas.
+\begin{center}
+	\includegraphics[width=1\textwidth]{image/chapter_01/ls.png}
+\end{center}
+  Este comando también tiene -banderas que nos ayudan a ver información adicional
+  de lo que vemos por ejemplo
+ \begin{enumerate}
+    \item ls -a Para ver archivos ocultos, los archivos ocultos llevan un . por delante
+    \item ls -l Nos da información mas detallada, que significa
+  \end{enumerate} 
+  
+\begin{lstlisting}
+ls -l
+\end{lstlisting}
+	\includegraphics[width=1\textwidth]{image/chapter_01/lsalh.png}
+\item ls -alh Mi favorito, (a) para ver archivos ocultos,(l) para lista detallada, (h)
+para que a diferencia del anterior la columna tamaño sea mas entendible lleva
+una K para Kbytes una M para mega bites G giga bytes.
+\\
+  
+\begin{lstlisting}
+	ls -alh
+\end{lstlisting}
+	\includegraphics[width=1\textwidth]{image/chapter_01/lslah.png}	
+\end{enumerate}
