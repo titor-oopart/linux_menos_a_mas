@@ -40,9 +40,14 @@ Usando la navegación básica hjkl podemos especificar cuantos lineas o caracter
   \item 12h, se moverá 12 caracteres a la izquierda.
   \item 110j, se moverá 110 lineas a la abajo.
   \item 5k, se moverá 5 lineas a la arriba.
-  \item 20l, se moverá 20 caracteres a la derecha.
+  \item 4l, se moverá 4 caracteres a la derecha.
 \end{itemize}
 \subsection{Navegación inicio y final}
+Para ir al inicio o final
+\begin{itemize}
+  \item {[ [}, nos vamos a la primera linea del archivo.
+  \item ] ], nos vamos a la ultima linea del archivo.
+\end{itemize}
 \subsection{Navegación palabras}
 En lugar de usar llll varias l para ir a la derecha o hhhh para ir a la izquierda, podemos avanzar o retroceder de palabra con:
 \begin{itemize}
@@ -75,16 +80,59 @@ Para seleccionar cosas para poder copiarlas y luego pegarlas primero tenemos que
   \item vb, Entramos en modo visual al final de la palabra luego con b seleccionamos hacia el inicio de la palabra
   \item vbbb, Entramos en modo visual al final de la palabra luego con bbb vamos seleccionando palabras hacia el inicio de la fila
 \end{itemize}
-
-
 \section{Ventanas}
+En LazyVim podemos crear varias ventanas donde podemos mostrar los archivos que necesitemos y navegar entre ellas.
+\subsection{Crear ventanas}
+\begin{itemize}
+  \item sv, creara una ventana vertical a la derecha,
+  \item ss, creara una ventana horizontal abajo,
+\end{itemize}
+\subsection{Navegar entre ventanas}
+\begin{itemize}
+  \item sh, saltamos a la ventana izquierda 
+  \item sj, saltamos a la ventana de abajo
+  \item sk, saltamos a la ventana arriba
+  \item sl, saltamos a la ventana derecha
+\end{itemize}
 \section{Consola}
+Podemos abrir y cerrar la consola con \textbf{crtl+/}
 \section{Buscador}
+Podemos buscar archivos y texto.
 \subsection{Buscador de archivos}
+\begin{itemize}
+  \item Esp Esp, para abrir el buscador de archivos en mi carpeta de trabajo.
+  \item Esp f f, en el root dir.
+  \item Esp f F, cwd lugar desde donde ejecutamos LazyVim.
+\end{itemize}
 \subsection{Buscador de texto}
-
+\begin{itemize}
+	\item Esp s g, busca en el root dir.
+	\item Esp s G, busca en el lugar desde donde ejecutamos LazyVim.
+\end{itemize}
+\subsection{Buscador grep en el archivo}
+\begin{itemize}
+  \item Presionamos / y se abre un buscador.
+  \item Para navegar entre las palabras coincidencias encontradas apretamos n para avanzar y N para retroceder.
+\end{itemize}
 \section{Copiar palabras, textos, párrafos}
+Esto se combina con otros comando de selección de la parte visual
+\begin{itemize}
+  \item y, para copiar lo seleccionado
+\end{itemize}
+\section{Eliminar}
+\begin{itemize}
+  \item dd, para cortar toda una linea, se guardara en el porta papel para ser pegado.
+  \item D, para cortar desde el puntero en adelante o a la derecha.
+\end{itemize}
 
+\section{Crear un nuevo archivo}
+Creamos un nuevo archivo en el lugar donde se encontraba antes de ejecutar el comando nvim.
+\begin{itemize}
+  \item te, se abrirá la consola de comandos con tabedit nombre\_archivo.txt
+  \item tab, para cambiar de ventana.
+\end{itemize}
+\section{Comentar código}
+gcc, comentamos código.
 
 
 
