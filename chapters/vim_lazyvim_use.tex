@@ -1,0 +1,92 @@
+\chapter{Uso de comandos vim en LazyVim}
+Vim es un editor de texto bastante popular que es muy usado para programar por la cantidad de complementos que se desarrollaron a su alrededor y hacen que esta pueda convertirse en un IDE profesional y no tenga nada que envidiar a los mas usados en el mundo tanto así que VisualStudio Code implemento plugins para convertir su IDE en uno similar a los muchos que tenemos en VIM.
+\\
+Vim soluciona algo que a muchos programadores les encanta y es NO USAR EL MOUSE para ganar rapidez, puede parecer algo raro pero una vez puedes hacer todo con las manos en el teclado no hay marcha atrás y aunque usar vim no se traduce en escribir mejor código directamente, es muy satisfactorio y rápido saber usarlo.
+\\
+Esta guía es un complemento a la instalación de LazyVim que realice. Repasaremos como usar los comandos mas usados para poder navegar y escribir código.
+\section{Comandos para guardar, salir}
+Cuando pulsamos : en el modo normal se nos abre una miniventana para comandos cmdline
+\begin{itemize}
+  \item w, guardar cambios.
+  \item q, salir de vim.
+  \item q!, salir de vim sin guardar cambios.
+  \item wq, guardar y salir de vim.
+\end{itemize}
+\section{Modos VIM}
+Existen 3 modos en VIM
+\begin{enumerate}
+  \item \textbf{normal}, pulsamos la tecla ESC, la tecla escape nos lleva a este modo lugar donde podremos navegar.
+  \item \textbf{Insert}, pulsamos la tecla i, modo donde podremos escribir o insertar texto, primero tenemos que estar en el modo normal para entrar en este modo(Mas adelante veremos otros atajos para entrar en modo insert)
+  \item \textbf{Visual}, pulsamos la tecla v, modo donde podremos seleccionar texto, primero tenemos que estar en el modo normal para entrar en el modo visual
+\end{enumerate}
+\section{Navegación}
+\subsection{Navegación básica hjkl}
+Para navegar en Vim usamos las teclas hjkl.
+\begin{itemize}
+  \item h, nos movemos a la izquierda.
+  \item j, nos movemos abajo.
+  \item k, nos movemos arriba.
+  \item l, nos movemos a la derecha.
+\end{itemize}
+\subsection{Navegación PageUp PageDown}
+Al igual que las teclas PageUP y PageDown tradicionales LazyVim tenemos los comandos:
+\begin{itemize}
+  \item Ctrl+u, PageUp
+  \item Ctrl+d, PageDown
+\end{itemize}
+\subsection{Navegación numérica}
+Usando la navegación básica hjkl podemos especificar cuantos lineas o caracteres nos queremos mover.
+\begin{itemize}
+  \item 12h, se moverá 12 caracteres a la izquierda.
+  \item 110j, se moverá 110 lineas a la abajo.
+  \item 5k, se moverá 5 lineas a la arriba.
+  \item 20l, se moverá 20 caracteres a la derecha.
+\end{itemize}
+\subsection{Navegación inicio y final}
+\subsection{Navegación palabras}
+En lugar de usar llll varias l para ir a la derecha o hhhh para ir a la izquierda, podemos avanzar o retroceder de palabra con:
+\begin{itemize}
+  \item w, avanzamos a la primera letra de la siguiente palabra.
+  \item e, avanzamos a la ultima letra de la siguiente palabra.
+  \item b, retrocedemos a la primera letra de la anterior palabra.
+\end{itemize}
+\section{Insertar}
+Al modo insert se puede acceder de las siguientes maneras.
+\begin{itemize}
+  \item i, entra en modo insert en el lugar donde estemos.
+  \item o, modo insert abajo de donde estamos creando una nueva linea.
+  \item O, modo insert arriba de donde estamos creando una nueva linea.
+  \item shift+a, modo insert al final de la linea.
+  \item shift+i, modo insert al inicio de la linea.
+\end{itemize}
+\section{Visual, selecciona texto y párrafos}
+Para seleccionar cosas para poder copiarlas y luego pegarlas primero tenemos que seleccionarlas con el modo visual muy similar cuando arrastramos el mouse para seleccionar varias lineas de texto aunque aquí no usamos el mouse.
+\subsection{Visual, selección con hjkl}
+\begin{itemize}
+  \item vh, primero entramos en modo visual con v, luego navegamos con hhhh para poder seleccionar navegando hacia la izquierda.
+  \item vjjjjj, primero entramos en modo visual con v, luego navegamos con jjjj para poder seleccionar navegando hacia abajo
+  \item vkkkkk, primero entramos en modo visual con v, luego navegamos con kkkk para poder seleccionar navegando hacia arriba 
+  \item vjjjjj, primero entramos en modo visual con v, luego navegamos con jjjj para poder seleccionar navegando hacia derecha.
+\end{itemize}
+\subsection{Visual, selección de palabras}
+\begin{itemize}
+  \item ve, Entramos en modo visual al inicio de la palabra luego con e seleccionamos hacia el final de la palabra
+  \item veee, Entramos en modo visual al inicio de la palabra luego con eee vamos seleccionando hacia el final de la fila
+  \item vb, Entramos en modo visual al final de la palabra luego con b seleccionamos hacia el inicio de la palabra
+  \item vbbb, Entramos en modo visual al final de la palabra luego con bbb vamos seleccionando palabras hacia el inicio de la fila
+\end{itemize}
+
+
+\section{Ventanas}
+\section{Consola}
+\section{Buscador}
+\subsection{Buscador de archivos}
+\subsection{Buscador de texto}
+
+\section{Copiar palabras, textos, párrafos}
+
+
+
+
+
+
